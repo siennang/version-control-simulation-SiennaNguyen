@@ -1,10 +1,12 @@
 <html>
-  <head>
-    <title>My Project</title>
-  </head>
-  </nav>
-  <body>
-    <nav>
+
+<head>
+  <title>My Project</title>
+</head>
+</nav>
+
+<body>
+  <nav>
     <ul>
       <li><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
@@ -15,12 +17,29 @@
         <img src="/images/cat.jpg" alt="cat" width="500">
         <h1>Welcome to My Website</h1>
         <p>
-          Hello, my name is Sienna and I am a software developer.
+          Hello, my name is Sienna and I am a software developer. Feel free to send me a message below:
         </p>
       </div>
     </section>
+    <section class="contact-form">
+      <div class="form-content">
+        <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="Name" required><br><br>
+
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="Email" required><br><br>
+
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="Message" rows="5" required></textarea><br><br>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
     <footer>
-    <p>&copy; 2026 My Website</p>
-  </footer>
-  </body>
+      <p>&copy; 2026 My Website</p>
+    </footer>
+</body>
+
 </html>
